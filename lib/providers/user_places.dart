@@ -1,19 +1,19 @@
 import 'dart:io';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'package:places_app/models/place.dart';
 
-class UserPlacesNorifier extends StateNotifier<List<Place>> {
-  UserPlacesNorifier() : super(const []);
+class UserPlacesNotifier extends StateNotifier<List<Place>> {
+  UserPlacesNotifier() : super(const []);
 
   void addPlace(String title, File image) {
     final newPlace = Place(title: title, image: image);
-
     state = [newPlace, ...state];
   }
 }
 
 final userPlacesProvider =
-    StateNotifierProvider<UserPlacesNorifier, List<Place>>(
-  (ref) => UserPlacesNorifier(),
+    StateNotifierProvider<UserPlacesNotifier, List<Place>>(
+  (ref) => UserPlacesNotifier(),
 );

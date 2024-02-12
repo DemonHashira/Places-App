@@ -98,6 +98,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "flutter_dotenv",
+      "rootUri": "file:///Users/kamisama/.pub-cache/hosted/pub.dev/flutter_dotenv-5.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///Users/kamisama/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3",
       "packageUri": "lib/",
@@ -404,7 +410,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-02-08T16:01:57.725190Z",
+  "generated": "2024-02-12T15:51:50.495430Z",
   "generator": "pub",
   "generatorVersion": "3.2.6"
 }

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:places_app/models/place.dart';
 
-class PlaceDetailsScreen extends StatelessWidget {
-  const PlaceDetailsScreen({super.key, required this.place});
+class PlaceDetailScreen extends StatelessWidget {
+  const PlaceDetailScreen({super.key, required this.place});
 
   final Place place;
 
@@ -16,9 +17,9 @@ class PlaceDetailsScreen extends StatelessWidget {
         children: [
           Image.file(
             place.image,
+            fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
-            fit: BoxFit.cover,
           ),
         ],
       ),
