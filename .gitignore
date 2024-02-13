@@ -59,9 +59,11 @@ linked_*.ds
 unlinked.ds
 unlinked_spec.ds
 
-# Android related
+# Android related 
+# AndroidManifest.xml should be edited in order for the app to work
+# Check flutter google maps 
 **/android/**/gradle-wrapper.jar
-**android/app/src/main/AndroidManifest.xml
+**android/app/src/main/AndroidManifest.xml 
 **/android/.gradle
 **/android/captures/
 **/android/gradlew
@@ -72,6 +74,9 @@ unlinked_spec.ds
 *.jks
 
 # iOS/XCode related
+# AppDelegate.swift should be edited in order for the app to work
+# Check flutter google maps 
+**/ios/Runner/AppDelegate.swift
 **/ios/**/*.mode1v3
 **/ios/**/*.mode2v3
 **/ios/**/*.moved-aside
