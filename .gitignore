@@ -63,7 +63,7 @@ unlinked_spec.ds
 # AndroidManifest.xml should be edited in order for the app to work
 # Check flutter google maps 
 **/android/**/gradle-wrapper.jar
-**android/app/src/main/AndroidManifest.xml 
+**/android/app/src/main/AndroidManifest.xml 
 **/android/.gradle
 **/android/captures/
 **/android/gradlew
