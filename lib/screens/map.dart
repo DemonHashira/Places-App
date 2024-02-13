@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+
 import 'package:places_app/models/place.dart';
 
 class MapScreen extends StatefulWidget {
@@ -10,14 +11,14 @@ class MapScreen extends StatefulWidget {
       longitude: -122.084,
       address: '',
     ),
-    this.isSelecting = false,
+    this.isSelecting = true,
   });
 
   final PlaceLocation location;
   final bool isSelecting;
 
   @override
-  State<StatefulWidget> createState() {
+  State<MapScreen> createState() {
     return _MapScreenState();
   }
 }
@@ -29,18 +30,17 @@ class _MapScreenState extends State<MapScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:
-            Text(widget.isSelecting ? 'Pick your location' : 'Your location'),
-        actions: [
-          if (widget.isSelecting)
-            IconButton(
-              icon: const Icon(Icons.save),
-              onPressed: () {
-                Navigator.of(context).pop(_pickedLocation);
-              },
-            ),
-        ],
-      ),
+          title:
+              Text(widget.isSelecting ? 'Pick your Location' : 'Your Location'),
+          actions: [
+            if (widget.isSelecting)
+              IconButton(
+                icon: const Icon(Icons.save),
+                onPressed: () {
+                  Navigator.of(context).pop(_pickedLocation);
+                },
+              ),
+          ]),
       body: GoogleMap(
         onTap: !widget.isSelecting
             ? null
