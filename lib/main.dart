@@ -22,7 +22,7 @@ final theme = ThemeData().copyWith(
     ),
     titleLarge: GoogleFonts.ubuntuCondensed(
       fontWeight: FontWeight.bold,
-    ),
+    ), /**/
   ),
 );
 
